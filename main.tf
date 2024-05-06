@@ -23,3 +23,4 @@ resource "aws_alb" "name" {
 resource "aws_vpc" "name" {
   
 }
+
