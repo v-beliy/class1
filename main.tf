@@ -10,3 +10,10 @@ terraform {
 provider "aws" {
     region = "eu-central-1"
 }
+
+resource "aws_vpc" "name" {
+    for_each = {
+        var.vpc_list
+    }
+    cidr_block = "value"
+}
