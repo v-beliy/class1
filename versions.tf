@@ -5,7 +5,7 @@ terraform {
             source = "hashicorp/aws"
             version = "5.45.0"
         }
-        gitlab {
+        gitlab = {
             source = "gitlabhq/gitlab"
             version = "16.11.0"
         }
