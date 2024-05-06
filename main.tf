@@ -11,9 +11,15 @@ provider "aws" {
     region = "eu-central-1"
 }
 
+resource "aws_account_region" "name" {
+    enabled = false
+    region_name = "us-west-2"
+}
+
+resource "aws_alb" "name" {
+  security_groups = [ "value" ]
+}
+
 resource "aws_vpc" "name" {
-    for_each = {
-        var.vpc_list
-    }
-    cidr_block = "value"
+  
 }
